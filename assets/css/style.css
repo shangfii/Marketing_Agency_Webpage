@@ -1,30 +1,44 @@
+/*  header controls */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Website background color control */
+
 body {
     background-color: #d9dcd6;
 }
+
+/* Header font and color control */
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    
 }
+
+/* H1 font size and display type control */
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* "Seo" text alternate color control */
+
 .header h1 .seo {
-    color: #d9dcd6;
+    color: red;
 }
 
-.header div {
+/* Setting style and font for the header nav */
+
+/* changed the header div to a header nav */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,23 +46,29 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
+/* Removed the unnecesary list style type */
 
-.header div ul li {
+/* Keeps the header nav links in horizontal order */
+
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
+/* Controls the header navigation links text color */
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Paragraph font size */
+
 p {
     font-size: 16px;
 }
+
+/* Setting the size and position of the background/main page image */
 
 .hero {
     height: 800px;
@@ -59,21 +79,29 @@ p {
     background-position: center;
 }
 
+/* Used to positon the sections left */
+
 .float-left {
     float: left;
     margin-right: 25px;
 }
+
+/* Used to positon the sections right */
 
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* This if for positioning of the sections underneath the main page image */
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/* Used to seperate icons and text into a seperate box with the sections stacked vertically */
 
 .benefits {
     margin-right: 20px;
@@ -86,53 +114,10 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* Removed the online-reputation-management, and social-media-marketing css sections because they were elements repeating the same code. This includes the h2 and img tags  */
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/* Used to size and color the section boxes as well as control the font inside those sections  */
+/* Swapped this css section with the one that controls the icons and paragraphs under them, as it was in a non sequential order */
 
 .search-engine-optimization {
     margin-bottom: 20px;
@@ -143,50 +128,43 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+/* Sets a max height for the images in the bottom left section of the page*/
 
 .search-engine-optimization img {
     max-height: 200px;
 }
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
+/* Spaces the paragraph from the Header in the bottom left section of the page  */
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+/* Controls the color of the text in the section paragraphs of the lower right section of the page */
+
+/* Removed benefit cost, and benefit brand tags including the imng, and h3 versions. This is due to me simplifying the CSS and removing code that does the same thing */
+
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+/* Centers the title elements for the bottom right section of the page */
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+/* Controls the size of the block element in the bottom right of the page  */
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Used to position and chosose font for the footer */
 
 .footer {
     padding: 30px;
@@ -195,6 +173,8 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/* Sets font size for the top text of our footer  */
+
+.footer h4 {
     font-size: 20px;
 }
